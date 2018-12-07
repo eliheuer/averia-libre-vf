@@ -15,6 +15,31 @@
 #
 # See AUTHORS.txt for the list of Authors and LICENSE.txt for the License.
 """
+BUILD VF: Automated build process for variable font onboarding.
+
+
+BASIC USE:
+
+This script is designed for use with the Fully Automated Font Repository
+standard, FAFR for short. Please see the git repo for redrence: 
+
+-> https://github.com/eliheuer/fully-automated-font-repository
+
+
+FLAGS:
+
+[1]  --googlefonts ~/Google/fonts/ofl/foo    Gives upstream location
+[2]  --drawbot                               Render the specimen with DrawBot
+[3]  --ttfautohint "-args"                   Autohints fonts given args
+
+
+[1]: --googlefonts ~/Google/fonts/ofl/foo
+
+This argument lets the skript know where the upstream location of the fonts
+is in the Google Fonts upstream repository. 
+
+
+
 Builds variable fonts using flags for input.
 """
 import argparse
@@ -289,22 +314,26 @@ def main():
     run_fontmake()
     rm_build_dirs()
     fix_dsig()
+
     # ttfautohint
     if args.ttfautohint is not None:
         ttfautohint()
     else:
         pass
+
     # GoogleFonts
     if args.googlefonts is not None:
         google_fonts()
     else:
         pass
+
     # FontBakery
     if args.fontbakery == True:
         fontbakery()
     else:
         pass
-    # Drawbot
+
+    # DrawBot
     if args.drawbot == True:
         render_specimens()
     else:
