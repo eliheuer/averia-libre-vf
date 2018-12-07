@@ -164,8 +164,8 @@ def run_fontmake():
             "fontmake \
                       -g sources/%s.glyphs \
                       -o variable \
-                      --output-path fonts/%s-VF.ttf \
-            > /dev/null 2>&1"
+                      --verbose DEBUG \
+                      --output-path fonts/%s-VF.ttf"
             % (source, source),
             shell=True,
         )
