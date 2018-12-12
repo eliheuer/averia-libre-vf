@@ -3,59 +3,79 @@ from drawBot import *
 import math
 import os
 
-# STATIC VARIABLES
-W,H,M = 1000,1000,20  # WIDTH, HEIGHT, MARGIN
-VAR_WGHT = 100        # VARIABLE FONT WEIGHT
-U = 32                # ONE GRID UNIT
 
-def set_font_roman():
-    font("fonts/TitilliumWeb-Roman-VF.ttf")
+# STATIC VARIABLE
+# Width, Height, Margin, Frames
+W, H, M, F = 1000, 1000, 100, 100
+VAR = 0  # Variation for variable font
+DOT = 19  # Dot size
+AMP = 160  # Distance from center
+STP = 0  # Step in sequence
+XPO = 0  # X position
+YPO = 0  # Y position
+U = 80  # Unit
+
+
+# SET FONT
+def set_font():
+    font("fonts/Averia-Serif-Libre-Roman-VF.ttf")
     for axis, data in listFontVariations().items():
         print((axis, data))
 
-def set_font_italic():
-    font("fonts/TitilliumWeb-Roman-VF.ttf")
-    for axis, data in listFontVariations().items():
-        print((axis, data))
 
-def grid(inc):
+# GRID
+def grid(INC):
+    # SET STYLE
+    lineCap("round")
     stroke(0)
-    stpX, stpY = 0, 0
-    incX, incY = (W-(M*2))/inc, (H-(M*2))/inc
-    for x in range(inc+1):
-        polygon((M+stpX, M), (M+stpX, H-M))
-        stpX += incX
-    for y in range(inc+1):
-        polygon((M, M+stpY), (H-M, M+stpY))
-        stpY += incY
+    STX, STY = 0, 0
+    INX, INY = (W - (M * 2)) / INC, (H - (M * 2)) / INC
+    for x in range(INC + 1):
+        polygon((M + STX, M), (M + STX, H - M))
+        STX += INX
+    for y in range(INC + 1):
+        polygon((M, M + STY), (H - M, M + STY))
+        STY += INY
 
-def set_box_style_a():
-    fill(0)
-    stroke(0)
 
-def set_box_style_b():
+# NEW PAGE
+def new_page():
+    newPage(W, H)
+    frameDuration(1 / 30)
+    set_font()
     fill(1)
+    rect(0, 0, W, H)
+
+def draw_dot(X, Y):
+    oval(int(X) + (W / 2), int(Y) + (W / 2), DOT, DOT)
+
+
+for frame in range(F):
+    # Draw PAGE
+    new_page()
+    strokeWidth(1)
     stroke(0)
+    oval(M + 240, M + 240, 320, 320)
+    grid(10)
 
-def draw_boxes():
-    # HEADLINE
-    set_box_style_b()
-    rect(M, M+(U*26), (U*30), (U*4))
-    # ROW 1
-    rect(M+(U*1),  M+(U*15), (U*13), (U*10))
-    rect(M+(U*16), M+(U*15), (U*13), (U*10))
-    # ROW 2
-    rect(M+(U*1),  M+(U*8), (U*13), (U*6))
-    rect(M+(U*16), M+(U*8), (U*13), (U*6))
-    # ROW 3
-    rect(M+(U*1),  M+(U*1), (U*13), (U*6))
-    rect(M+(U*16), M+(U*1), (U*13), (U*6))
+    # Type demo
+    fontSize(100)
+    fontVariations(wght=300 + VAR)
+    fill(0)
+    stroke(None)
+    text("A", (M, 800))
 
-# DRAW NEW PAGE
-newPage(W, H)
-fill(1)
-rect(0, 0, W, H)
-grid(30)
-draw_boxes()
-set_font_roman()
-fill(0)
+    # SET DOT POS
+    XPO_A = (math.cos(STP) * AMP) - DOT / 2
+    YPO_A = (-1 * math.sin(STP) * AMP) - DOT / 2
+
+    draw_dot(XPO_A, YPO_A)
+    STP += (0.02) * math.pi
+    VAR += 10
+
+# Save GIF
+os.chdir("docs")
+os.chdir("specimens")
+saveImage("animated-specimen.gif")
+os.chdir("..")
+os.chdir("..")
