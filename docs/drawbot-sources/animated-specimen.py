@@ -63,7 +63,7 @@ for frame in range(F):
     fontVariations(wght=300 + VAR)
     fill(0)
     stroke(None)
-    text("A", (M, 800))
+    text("ABCD", (M, 800))
 
     # SET DOT POS
     XPO_A = (math.cos(STP) * AMP) - DOT / 2
