@@ -1,4 +1,4 @@
-# RENDER WITH: http://www.drawbot.com/
+#RENDER WITH: http://www.drawbot.com/
 from drawBot import *
 import math
 import os
@@ -11,8 +11,8 @@ VAR = 0  # Variation for variable font
 DOT = 19  # Dot size
 AMP = 160  # Distance from center
 STP = 0  # Step in sequence
-XPO = 0  # X position
-YPO = 0  # Y position
+XPO = 0.0  # X position
+YPO = 0.0  # Y position
 U = 80  # Unit
 
 
@@ -68,8 +68,16 @@ for frame in range(F):
     # SET DOT POS
     XPO_A = (math.cos(STP) * AMP) - DOT / 2
     YPO_A = (-1 * math.sin(STP) * AMP) - DOT / 2
-
+    print("x pos = ", XPO_A)
+    print("y pos = ", YPO_A)
     draw_dot(XPO_A, YPO_A)
+
+    xpo_a_string = "{:04d}".format(int(XPO_A))
+    ypo_a_string = "{:04d}".format(int(YPO_A))
+    font('Helvetica')
+    fontSize(25)
+    text(xpo_a_string, (M,M))
+
     STP += (0.02) * math.pi
     VAR += 10
 

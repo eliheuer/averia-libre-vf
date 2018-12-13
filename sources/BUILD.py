@@ -21,7 +21,7 @@ BUILD VF: Automated build process for variable font onboarding.
 BASIC USE:
 
 This script is designed for use with the Fully Automated Font Repository
-standard, FAFR for short. Please see the git repo for redrence: 
+standard, FAFR for short. Please see the git repo for redrence:
 
 -> https://github.com/eliheuer/fully-automated-font-repository
 
@@ -36,7 +36,7 @@ FLAGS:
 [1]: --googlefonts ~/Google/fonts/ofl/foo
 
 This argument lets the skript know where the upstream location of the fonts
-is in the Google Fonts upstream repository. 
+is in the Google Fonts upstream repository.
 
 
 
@@ -94,7 +94,7 @@ def printY(prt):
 
 
 def intro():
-    """ 
+    """
     Gives basic script info.
     """
     printG("#    # #####                    #####    ################")
