@@ -59,11 +59,20 @@ for frame in range(F):
     grid(10)
 
     # Type demo
-    fontSize(100)
+    fontSize(80)
     fontVariations(wght=300 + VAR)
     fill(0)
     stroke(None)
-    text("ABCD", (M, 800))
+    text("ABCDEFGHIJKLM", (M, 820-0))
+    text("NOPQRSTUVWXYZ", (M, 820-80))
+    text("NOPQRSTUVWXYZ", (M, 820-160))
+    text("NOPQRSTUVWXYZ", (M, 820-240))
+    text("NOPQRSTUVWXYZ", (M, 820-320))
+    text("NOPQRSTUVWXYZ", (M, 820-400))
+    text("NOPQRSTUVWXYZ", (M, 820-480))
+    text("NOPQRSTUVWXYZ", (M, 820-560))
+    text("NOPQRSTUVWXYZ", (M, 820-640))
+    text("NOPQRSTUVWXYZ", (M, 820-720))
 
     # SET DOT POS
     XPO_A = (math.cos(STP) * AMP) - DOT / 2
