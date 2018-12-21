@@ -98,21 +98,15 @@ def intro():
     Gives basic script info.
     """
     printG("#    # #####                    #####    ################")
-    time.sleep(0.1)
     printG("#    # #                        #   #    #   ##         #")
-    time.sleep(0.1)
     printG(" #  #  ####                      #   #  #   # #   #######")
-    time.sleep(0.1)
     printG(" #  #  #     <---------------->  #    ##    # #      #")
-    time.sleep(0.1)
     printG("  ##   #                          #        #  #   ####")
-    time.sleep(0.1)
     printG("  ##   #                          ##########  #####")
-    time.sleep(0.1)
     print("\n**** Starting variable font build script:")
     print("     [+]", time.ctime())
     printG("    [!] Done")
-    time.sleep(0.1)
+    time.sleep(1)
 
 
 def display_args():
@@ -120,16 +114,12 @@ def display_args():
     Gives info about the flags.
     """
     print("\n**** Settings:")
-    time.sleep(0.1)
     print("     [+] --drawbot\t", args.drawbot)
-    time.sleep(0.1)
     print("     [+] --googlefonts\t", args.googlefonts)
-    time.sleep(0.1)
     print("     [+] --ttfautohint\t", args.ttfautohint)
-    time.sleep(0.1)
     print("     [+] --fontbakery\t", args.fontbakery)
-    time.sleep(0.1)
     printG("    [!] Done")
+    time.sleep(1)
 
 
 def check_root_dir():
@@ -209,6 +199,24 @@ def rm_build_dirs():
     time.sleep(1)
 
 
+def fix_dsig():
+    """
+    Fixes DSIG table
+    """
+    print("\n**** Run: gftools")
+    for source in sources:
+        subprocess.call(
+            "gftools \
+                     fix-dsig fonts/%s-VF.ttf --autofix \
+                     > /dev/null 2>&1"
+            % source,
+            shell=True,
+        )
+        print("     [+] Done:", source)
+    printG("    [!] Done")
+    time.sleep(1)
+
+
 def ttfautohint():
     """
     Runs ttfautohint with various flags set. For more info run: ttfautohint --help
@@ -230,24 +238,6 @@ def ttfautohint():
         os.chdir("..")
         cwd = os.getcwd()
         print("     [+] In Directory:", cwd)
-        print("     [+] Done:", source)
-    printG("    [!] Done")
-    time.sleep(1)
-
-
-def fix_dsig():
-    """
-    Fixes DSIG table
-    """
-    print("\n**** Run: gftools")
-    for source in sources:
-        subprocess.call(
-            "gftools \
-                     fix-dsig fonts/%s-VF.ttf --autofix \
-                     > /dev/null 2>&1"
-            % source,
-            shell=True,
-        )
         print("     [+] Done:", source)
     printG("    [!] Done")
     time.sleep(1)
