@@ -13,9 +13,11 @@ z,
 "/gravecomb",
 "ªº",
 "º",
-"ª"
+"ª",
+" ",
+" "
 );
-copyright = "Copyright (c) 2011, Dan Sayers (i@iotic.com), with Reserved Font Name 'Averia' and 'Averia Libre'.";
+copyright = "Copyright (c) 2011, Dan Sayers (i@iotic.com)";
 customParameters = (
 {
 name = license;
@@ -27,7 +29,7 @@ value = "http://scripts.sil.org/OFL";
 },
 {
 name = vendorID;
-value = PfEd;
+value = DANS;
 },
 {
 name = panose;
@@ -83,7 +85,7 @@ capHeight = 700;
 customParameters = (
 {
 name = typoAscender;
-value = 1622;
+value = 1890;
 },
 {
 name = typoDescender;
@@ -95,7 +97,7 @@ value = 184;
 },
 {
 name = winAscent;
-value = 1823;
+value = 1890;
 },
 {
 name = winDescent;
@@ -103,7 +105,7 @@ value = 465;
 },
 {
 name = hheaAscender;
-value = 1823;
+value = 1890;
 },
 {
 name = hheaDescender;
@@ -18565,6 +18567,20 @@ width = 519;
 );
 note = uni0020;
 unicode = 0020;
+},
+{
+glyphname = uni00A0;
+layers = (
+{
+layerId = "92A672BF-229C-4BEC-8D25-4DDBB2A38145";
+width = 600;
+},
+{
+layerId = "5CBF0BAD-1756-4F16-9711-93DC239D102B";
+width = 600;
+}
+);
+unicode = 00A0;
 },
 {
 glyphname = cent;
