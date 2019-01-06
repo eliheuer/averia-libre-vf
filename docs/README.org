@@ -1,5 +1,8 @@
 * Development Notes
+** Notes
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ** Task List
+The following task are Emacs ORG mode todo items for this project. They might not render correctly on GitHub so please view the raw test file or open with Emacs Org Mode to see time staps and compleations statuses.
 *** TODO Make first PR
 **** TODO foobar 
 **** TODO foobar2
@@ -10,5 +13,3 @@
 
 *** DONE Add ORG file to Git repo
     CLOSED: [2019-01-05 Sat 19:09]
-** Notes
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
