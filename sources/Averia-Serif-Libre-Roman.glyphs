@@ -2,7 +2,8 @@
 .appVersion = "1199";
 DisplayStrings = (
 C,
-a
+a,
+e
 );
 copyright = "Copyright (c) 2011, Dan Sayers (i@iotic.com)";
 customParameters = (
@@ -7550,7 +7551,9 @@ nodes = (
 "725 601 OFFCURVE",
 "701 594 OFFCURVE",
 "622 585 CURVE SMOOTH",
-"354 567 LINE SMOOTH"
+"533 579 OFFCURVE",
+"443 573 OFFCURVE",
+"354 567 CURVE SMOOTH"
 );
 }
 );
@@ -7612,7 +7615,9 @@ nodes = (
 "715 607.667 OFFCURVE",
 "698 590 OFFCURVE",
 "664 590 CURVE SMOOTH",
-"391 578 LINE SMOOTH"
+"573 586 OFFCURVE",
+"482 582 OFFCURVE",
+"391 578 CURVE SMOOTH"
 );
 }
 );
