@@ -1,9 +1,8 @@
 {
 .appVersion = "1199";
 DisplayStrings = (
-C,
-a,
-e
+"Ä",
+"À"
 );
 copyright = "Copyright (c) 2011, Dan Sayers (i@iotic.com)";
 customParameters = (
