@@ -186,12 +186,12 @@ Fontbakery version: 0.6.6
 <br>
 </details>
 <details>
-<summary><b>[118] Averia-Serif-Libre-Roman-VF.ttf</b></summary>
+<summary><b>[118] Averia-Serif-Libre-Italic-VF.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Checking file is named canonically.</summary>
 
 * [com.google.fonts/check/001](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/001)
-* :fire: **FAIL** Style name used in "/Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Roman-VF.ttf" is not canonical. You should rebuild the font using any of the following style names: "Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Black", "Thin Italic", "ExtraLight Italic", "Light Italic", "Italic", "Medium Italic", "SemiBold Italic", "Bold Italic", "ExtraBold Italic", "Black Italic".
+* :fire: **FAIL** Style name used in "/Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Italic-VF.ttf" is not canonical. You should rebuild the font using any of the following style names: "Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Black", "Thin Italic", "ExtraLight Italic", "Light Italic", "Italic", "Medium Italic", "SemiBold Italic", "Bold Italic", "ExtraBold Italic", "Black Italic".
 
 </details>
 <details>
@@ -233,7 +233,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Averia Serif Libre Light' / SUBFAMILY_NAME = 'Regular'
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Averia Serif Libre Light Italic' / SUBFAMILY_NAME = 'Italic'
 
 </details>
 <details>
@@ -613,12 +613,12 @@ Fontbakery version: 0.6.6
 * [com.google.fonts/check/054](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/054)
 * :information_source: **INFO** Hinting filesize impact:
 
-|  | /Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Roman-VF.ttf |
+|  | /Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Italic-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 67.7kb |
-| Hinted Size | 90.2kb |
-| Increase | 22.5kb |
-| Change   | 33.2 % |
+| Dehinted Size | 71.1kb |
+| Hinted Size | 96.1kb |
+| Increase | 25.0kb |
+| Change   | 35.2 % |
 
 
 </details>
@@ -658,8 +658,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [DSIG, fpgm, GPOS, loca, cvt , prep, gasp]
+* :information_source: **INFO** This font contains the following optional tables [GPOS, cvt , DSIG, fpgm, prep, loca, gasp]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Font follows the family naming recommendations?</summary>
+
+* [com.google.fonts/check/071](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/071)
+* :information_source: **INFO** Font does not follow some family naming recommendations:
+
+| Field | Value | Recommendation |
+|:----- |:----- |:-------------- |
+| PostScript Name | AveriaSerifLibre-LightItalicItalic | exceeds max length (29) |
+
 
 </details>
 <details>
@@ -950,13 +962,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Font follows the family naming recommendations?</summary>
-
-* [com.google.fonts/check/071](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/071)
-* :bread: **PASS** Font follows the family naming recommendations.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
@@ -1040,5 +1045,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 5 | 63 | 6 | 63 |
-| 0% | 4% | 3% | 44% | 4% | 44% |
+| 0 | 6 | 5 | 63 | 7 | 62 |
+| 0% | 4% | 3% | 44% | 5% | 43% |

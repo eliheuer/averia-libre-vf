@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Copyright 2018 The Google Font Tools Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -203,12 +203,10 @@ def fix_dsig():
     """
     Fixes DSIG table
     """
-    print("\n**** Run: gftools")
+    print("\n**** Run: gftools: fix DSIG")
     for source in sources:
         subprocess.call(
-            "gftools \
-                     fix-dsig fonts/%s-VF.ttf --autofix \
-                     > /dev/null 2>&1"
+            "gftools fix-dsig fonts/%s-VF.ttf --autofix"
             % source,
             shell=True,
         )
@@ -227,18 +225,16 @@ def ttfautohint():
     print("     [+] In Directory:", cwd)
     for source in sources:
         subprocess.call(
-            "ttfautohint \
-                         %s \
-                         %s-VF.ttf %s-VF-Fix.ttf"
+            "ttfautohint %s %s-VF.ttf %s-VF-Fix.ttf"
             % (args.ttfautohint, source, source),
             shell=True,
         )
         subprocess.call("cp %s-VF-Fix.ttf %s-VF.ttf" % (source, source), shell=True)
         subprocess.call("rm -rf %s-VF-Fix.ttf" % source, shell=True)
-        os.chdir("..")
-        cwd = os.getcwd()
-        print("     [+] In Directory:", cwd)
         print("     [+] Done:", source)
+    os.chdir("..")
+    cwd = os.getcwd()
+    print("     [+] In Directory:", cwd)
     printG("    [!] Done")
     time.sleep(1)
 
@@ -266,13 +262,7 @@ def fontbakery():
     """
     print("\n**** Run: FontBakery:")
     for source in sources:
-        subprocess.call(
-            "fontbakery \
-                        check-googlefonts %s/%s-VF.ttf \
-                        --ghmarkdown docs/FONTBAKERY-REPORT-%s.md "
-            % (args.googlefonts, source, source),
-            shell=True,
-        )
+        subprocess.call("fontbakery check-googlefonts %s/%s-VF.ttf --ghmarkdown docs/FONTBAKERY-REPORT-%s.md" % (args.googlefonts, source, source), shell=True, )
         print("     [+] Done:", source)
     printG("    [!] Done")
     time.sleep(1)
