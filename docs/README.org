@@ -7,16 +7,18 @@ They might not render correctly on GitHub so please view the raw
 test file or open with Emacs Org Mode to see time staps and 
 compleations statuses.
 *** TODO Compare VF with static
-**** TODO Averia Libre Serif
-***** Notes
-**** TODO Averia Libre Ssans
+**** DONE Averia Libre Serif Roman
+     CLOSED: [2019-01-07 Mon 10:45]
+**** TODO Averia Libre Serif Italic
+***** This is good for the first pr at this point 
+**** TODO Averia Libre Sans
 **** TODO Averia Libre
 *** TODO Make first PR
-**** TODO foobar 
-**** TODO foobar2
+**** TODO Finalize file structure 
+**** TODO 
 *** TODO Kerning Fixes
-**** TODO foobar1
-**** TODO foobar2
-**** TODO foobar3
+**** TODO main
+**** TODO serif
+**** TODO sans
 *** DONE Add ORG file to Git repo
     CLOSED: [2019-01-05 Sat 19:09]
