@@ -1,14 +1,15 @@
 {
 .appVersion = "1199";
 DisplayStrings = (
-"Ä",
-"À"
+Av,
+Av,
+Av
 );
 copyright = "Copyright (c) 2011, Dan Sayers (i@iotic.com)";
 customParameters = (
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
@@ -80,7 +81,7 @@ value = -426;
 },
 {
 name = typoLineGap;
-value = 184;
+value = 0;
 },
 {
 name = winAscent;
@@ -96,7 +97,7 @@ value = 1890;
 },
 {
 name = hheaDescender;
-value = -465;
+value = -426;
 },
 {
 name = strikeoutPosition;
@@ -137,7 +138,7 @@ value = -426;
 },
 {
 name = typoLineGap;
-value = 184;
+value = 0;
 },
 {
 name = winAscent;
@@ -153,7 +154,7 @@ value = 1833;
 },
 {
 name = hheaDescender;
-value = -466;
+value = -426;
 },
 {
 name = strikeoutPosition;
@@ -25546,6 +25547,18 @@ isBold = 1;
 name = Bold;
 }
 );
+kerning = {
+"92A672BF-229C-4BEC-8D25-4DDBB2A38145" = {
+A = {
+v = -200;
+};
+};
+"5CBF0BAD-1756-4F16-9711-93DC239D102B" = {
+A = {
+v = -200;
+};
+};
+};
 manufacturer = "Dan Sayers";
 manufacturerURL = iotic.com;
 unitsPerEm = 2048;

@@ -5,18 +5,11 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Does DESCRIPTION file contain broken links?</summary>
+<summary>:information_source: <b>INFO:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/003](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/003)
-* :fire: **FAIL** The following links are broken in the DESCRIPTION file: 'http://iotic.com/averia/', 'http://iotic.com/averia/'
 * :information_source: **INFO** Found an email address: mailto:i@iotic.com
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
-
-* [com.google.fonts/check/006](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/006)
-* :fire: **FAIL** DESCRIPTION.en_us.html must have size smaller than 1000 bytes.
+* :bread: **PASS** All links in the DESCRIPTION file look good!
 
 </details>
 <details>
@@ -41,6 +34,13 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/005](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/005)
 * :bread: **PASS** DESCRIPTION.en_us.html is larger than 200 bytes.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
+
+* [com.google.fonts/check/006](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/006)
+* :bread: **PASS** DESCRIPTION.en_us.html is smaller than 1000 bytes.
 
 </details>
 <details>
@@ -195,27 +195,6 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
-* :fire: **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL" Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" [code: wrong]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
-
-* [com.google.fonts/check/042](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/042)
-* :fire: **FAIL** OS/2 sTypoDescender and hhea descent must be equal. [code: descender]
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/018](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/018)
@@ -234,20 +213,6 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
 * :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Averia Serif Libre Light Italic' / SUBFAMILY_NAME = 'Italic'
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Checking Vertical Metric Linegaps.</summary>
-
-* [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/041)
-* :warning: **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Does GPOS table have kerning information?</summary>
-
-* [com.google.fonts/check/063](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/063)
-* :warning: **WARN** GPOS table lacks kerning information.
 
 </details>
 <details>
@@ -569,7 +534,7 @@ Fontbakery version: 0.6.6
 <summary>:zzz: <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
 
 * [com.google.fonts/check/065](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/065)
-* :zzz: **SKIP** Unfulfilled Conditions: ligatures, has_kerning_info
+* :zzz: **SKIP** Unfulfilled Conditions: ligatures
 
 </details>
 <details>
@@ -658,7 +623,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, cvt , DSIG, fpgm, prep, loca, gasp]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, prep, gasp, DSIG, GPOS, loca, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -693,6 +658,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/019](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/019)
 * :bread: **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
+* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -777,6 +756,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/040](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/040)
 * :bread: **PASS** OS/2 usWinAscent & usWinDescent values look good!
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
+
+* [com.google.fonts/check/042](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/042)
+* :bread: **PASS** OS/2.sTypoAscender/Descender values match hhea.ascent/descent.
 
 </details>
 <details>
@@ -969,6 +955,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Checking Vertical Metric Linegaps.</summary>
+
+* [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/041)
+* :bread: **PASS** OS/2 sTypoLineGap and hhea lineGap are both 0.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> MaxAdvanceWidth is consistent with values in the Hmtx and Hhea tables?</summary>
 
 * [com.google.fonts/check/073](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/073)
@@ -987,6 +980,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/050](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/050)
 * :bread: **PASS** Whitespace and non-breaking space have the same width.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Does GPOS table have kerning information?</summary>
+
+* [com.google.fonts/check/063](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/063)
+* :bread: **PASS** GPOS table has got kerning information.
 
 </details>
 <details>
@@ -1045,5 +1045,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 5 | 63 | 7 | 62 |
-| 0% | 4% | 3% | 44% | 5% | 43% |
+| 0 | 1 | 3 | 63 | 8 | 68 |
+| 0% | 1% | 2% | 44% | 6% | 48% |
