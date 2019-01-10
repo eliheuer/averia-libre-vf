@@ -69,3 +69,6 @@
 
 *** DONE Add ORG file to Git repo
     CLOSED: [2019-01-05 Sat 19:09]
+
+
+git commit -m "Adding seprate roman and italic variable fonts"
