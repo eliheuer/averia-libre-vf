@@ -5,6 +5,13 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
+
+* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
+* :fire: **FAIL** This family lacks a Regular (style: normal and weight: 400) as required by Google Fonts standards.
+
+</details>
+<details>
 <summary>:information_source: <b>INFO:</b> Does DESCRIPTION file contain broken links?</summary>
 
 * [com.google.fonts/check/003](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/003)
@@ -44,10 +51,80 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Check METADATA.pb parse correctly. </summary>
+
+* [com.google.fonts/check/metadata/parses](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/metadata/parses)
+* :bread: **PASS** METADATA.pb parsed successfuly.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
+
+* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
+* :bread: **PASS** Font designer field is not 'unknown'.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Check font has a license.</summary>
 
 * [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/028)
 * :bread: **PASS** Found license at '/Users/Air/Google/fonts/ofl/averiaseriflibre/OFL.txt'
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
+
+* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
+* :bread: **PASS** Font is properly listed via Google Fonts API.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
+
+* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
+* :bread: **PASS** METADATA.pb "fonts" field only has unique "full_name" values.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
+
+* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
+* :bread: **PASS** METADATA.pb "fonts" field only has unique style:weight pairs.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
+
+* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
+* :bread: **PASS** Font license is declared in METADATA.pb as "OFL"
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
+
+* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
+* :bread: **PASS** METADATA.pb contains "menu" and "latin" subsets.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
+
+* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
+* :bread: **PASS** METADATA.pb subsets are sorted in alphabetical order.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
+
+* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
+* :bread: **PASS** Copyright is consistent across family
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check that METADATA.pb family values are all the same.</summary>
+
+* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
+* :bread: **PASS** METADATA.pb: Family name is the same in all metadata "fonts" items.
 
 </details>
 <details>
@@ -100,87 +177,10 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Check METADATA.pb parse correctly. </summary>
-
-* [com.google.fonts/check/metadata/parses](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/metadata/parses)
-* :zzz: **SKIP** Font family at '/Users/Air/Google/fonts/ofl/averiaseriflibre' lacks a METADATA.pb file.
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
-
-* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
-
-* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
-
-* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
-
-* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
-
-* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
-
-* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
-
-* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
-
-* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check that METADATA.pb family values are all the same.</summary>
-
-* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
-
-* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> METADATA.pb: Regular should be 400.</summary>
 
 * [com.google.fonts/check/091](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/091)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, has_regular_style
+* :zzz: **SKIP** Unfulfilled Conditions: has_regular_style
 
 </details>
 <br>
@@ -213,6 +213,15 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
 * :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Averia Serif Libre Light Italic' / SUBFAMILY_NAME = 'Italic'
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Check for points out of bounds.</summary>
+
+* [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/075)
+* :warning: **WARN** The following glyphs have coordinates which are out of bounds:
+[('Iacute', -134.0992, 12.0), ('Icircumflex', -130.0992, 12.0), ('Idieresis', -130.0992, 12.0), ('Idieresis', 851.296, 1720.0), ('Igrave', -136.0992, 12.0), ('Igrave', 807.1072, 1358.0), ('Nacute', 1671.2656, 1359.0), ('Ntilde', 1679.2656, 1359.0), ('Oacute', -6.235199999999992, 472.0), ('Oacute', 1427.1152, 853.0), ('Ocircumflex', -2.235199999999992, 472.0), ('Ocircumflex', 1431.1152, 853.0), ('Odieresis', -2.235199999999992, 472.0), ('Odieresis', 1431.1152, 853.0), ('Ograve', -8.235199999999992, 472.0), ('Ograve', 1425.1152, 853.0), ('Otilde', 1.7648000000000081, 472.0), ('Otilde', 1435.1152, 853.0), ('Zcaron', -138.3072, 17.0), ('adieresis', 930.296, 1304.0), ('atilde', 972.4336000000001, 1284.0), ('iacute', -92.35679999999999, 23.0), ('icircumflex', -87.35679999999999, 23.0), ('idieresis', -88.35679999999999, 23.0), ('idieresis', 679.296, 1391.0), ('igrave', -94.35679999999999, 23.0), ('nacute', -86.0896, 31.0), ('nacute', 1068.0752, 878.0), ('ntilde', -78.0896, 31.0), ('ntilde', 1085.4336, 1295.0), ('oacute', -25.033600000000007, 246.0), ('oacute', 1050.0384, 701.0), ('ocircumflex', -21.033600000000007, 246.0), ('odieresis', -21.033600000000007, 246.0), ('odieresis', 1054.0384, 701.0), ('ograve', -28.033600000000007, 246.0), ('ograve', 1047.0384, 701.0), ('otilde', -17.033600000000007, 246.0), ('otilde', 1058.0384, 701.0), ('scaron', -60.2192, 87.0), ('uacute', 1090.3424, 886.0), ('ucircumflex', 1094.3424, 886.0), ('udieresis', 1094.3424, 886.0), ('ugrave', 1087.3424, 886.0), ('yacute', -97.30080000000001, -387.0), ('yacute', 1221.1536, 929.0), ('ydieresis', -93.30080000000001, -387.0), ('ydieresis', 1225.1536, 929.0), ('zcaron', -79.35679999999999, 23.0)]
+This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
 <details>
@@ -289,7 +298,7 @@ Fontbakery version: 0.6.6
 <summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename field contains font name in right format?</summary>
 
 * [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/100)
-* :zzz: **SKIP** Unfulfilled Conditions: style, family_metadata
+* :zzz: **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -359,7 +368,7 @@ Fontbakery version: 0.6.6
 <summary>:zzz: <b>SKIP:</b> METADATA.pb: Check font name is the same as family name.</summary>
 
 * [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/110)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, font_metadata
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
@@ -580,10 +589,10 @@ Fontbakery version: 0.6.6
 
 |  | /Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Italic-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 71.1kb |
-| Hinted Size | 96.1kb |
-| Increase | 25.0kb |
-| Change   | 35.2 % |
+| Dehinted Size | 72.2kb |
+| Hinted Size | 96.9kb |
+| Increase | 24.7kb |
+| Change   | 34.1 % |
 
 
 </details>
@@ -623,7 +632,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [fpgm, prep, gasp, DSIG, GPOS, loca, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [loca, gasp, cvt , GPOS, DSIG, prep, fpgm]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1004,13 +1013,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check for points out of bounds.</summary>
-
-* [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/075)
-* :bread: **PASS** All glyph paths have coordinates within bounds!
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/167)
@@ -1045,5 +1047,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 3 | 63 | 8 | 68 |
-| 0% | 1% | 2% | 44% | 6% | 48% |
+| 0 | 2 | 4 | 52 | 8 | 77 |
+| 0% | 1% | 3% | 36% | 6% | 54% |

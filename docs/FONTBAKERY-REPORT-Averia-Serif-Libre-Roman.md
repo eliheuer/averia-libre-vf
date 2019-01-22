@@ -16,8 +16,9 @@ Fontbakery version: 0.6.6
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.6)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6 (latest)
+* :information_source: **INFO** fontbakery (0.6.7)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.6.6
+  LATEST:    0.6.7
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -227,6 +228,13 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/020)
 * :zzz: **SKIP** Unfulfilled Conditions: style
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Font has ttfautohint params? </summary>
+
+* [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
+* :zzz: **SKIP** Font appears to our heuristic as not hinted using ttfautohint.
 
 </details>
 <details>
@@ -580,10 +588,10 @@ Fontbakery version: 0.6.6
 
 |  | /Users/Air/Google/fonts/ofl/averiaseriflibre/Averia-Serif-Libre-Roman-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 67.7kb |
-| Hinted Size | 90.2kb |
-| Increase | 22.5kb |
-| Change   | 33.2 % |
+| Dehinted Size | 64.0kb |
+| Hinted Size | 87.3kb |
+| Increase | 23.2kb |
+| Change   | 36.3 % |
 
 
 </details>
@@ -614,7 +622,7 @@ PPM <= 65535:
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -W -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2)"
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -623,8 +631,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, gasp, loca, fpgm, DSIG, prep, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [prep, loca, GPOS, cvt , gasp, DSIG, fpgm]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1102 but should be 1105 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -674,13 +689,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/055](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/055)
 * :bread: **PASS** Version format in NAME table entries is correct.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Font has ttfautohint params? </summary>
-
-* [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
-* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -W -X "")
 
 </details>
 <details>
@@ -894,13 +902,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
 
 * [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/015)
@@ -1040,5 +1041,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 3 | 63 | 7 | 69 |
-| 0% | 1% | 2% | 44% | 5% | 48% |
+| 0 | 1 | 3 | 64 | 8 | 67 |
+| 0% | 1% | 2% | 45% | 6% | 47% |
